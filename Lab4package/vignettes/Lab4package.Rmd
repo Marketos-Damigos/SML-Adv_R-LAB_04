@@ -1,0 +1,10 @@
+---
+title: "Lab4Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Lab4Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+# /dsa
