@@ -6,6 +6,9 @@
 \usage{
 ext_print(...)
 }
+\arguments{
+\item{...}{Value to print}
+}
 \value{
 Prints the content that is assigned
 }

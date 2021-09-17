@@ -1,8 +1,8 @@
 #' Asterisks function
 #'
 #' @description Help function to convert p_value to asterisks
-#'
-#'
+#' @param p_value p value
+#' @usage asterisks(p_value)
 #' @return Returns the p_value in asterisks
 #' @export asterisks
 

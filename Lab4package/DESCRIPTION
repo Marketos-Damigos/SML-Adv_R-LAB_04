@@ -9,3 +9,11 @@ Description: Creates an RC class that calculates linear regression with the use 
 License: GPL-3
 RoxygenNote: 7.1.1
 Encoding: UTF-8
+VignetteBuilder: knitr
+Depends: R (>= 3.3.0)
+LazyData: true
+Suggests: testthat,
+    knitr,
+    rmarkdown,
+    ggplot2
+Imports: methods

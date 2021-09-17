@@ -24,6 +24,7 @@
 #' @field pred function. Returns predictions.
 #' @field coef function. Returns coefficients.
 #' @field summary function. Returns summary of the above.
+#' @import methods
 #' @return Nothing.
 #' @export linreg
 #' @exportClass linreg
