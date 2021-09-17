@@ -1,9 +1,9 @@
 Package: Lab4package
 Type: Package
-Title: What the package does (short line)
+Title: Creates an RC class that calculates linear regression with the use of QR Decomposition. Also comes with some handy tools.
 Version: 1.0
 Date: 2021-09-17
-Author: Marketos Damigos (marda352), Christoforos Spyretos
+Author: Marketos Damigos (marda352), Christoforos Spyretos (chrsp415)
 Maintainer: Marketos Damigos <marda352@liu.se>
 Description: More about what it does (maybe more than one line)
 License: GPL-3

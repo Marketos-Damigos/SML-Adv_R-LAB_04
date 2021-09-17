@@ -1,3 +1,27 @@
+#' linreg RC Class
+#'
+#' @description This class offers linear regression calculation using the QR Decomposition method and comes with some handy tools.
+#'
+#' @field X matrix. Independent Values.
+#' @field y matrix. Depenent Values.
+#' @field b_hat matrix. Regression Coeffcients.
+#' @field y_hat matrix. Fitted Values.
+#' @field l_e matrix. Residuals.
+#' @field l_n numeric. Number of Independant Values (Number of Observations).
+#' @field l_p numeric. Number of Dependant Values (Number of Parameters in the Model).
+#' @field l_df numeric. Degrees of freedom.
+#' @field l_sigma_s matrix. Residual Variance.
+#' @field l_var_beta matrix. Variance of the Regression Coefficients.
+#' @field l_formula formula. The Formula for the Linear Regression.
+#' @field l_p_values numeric. P-Values.
+#' @field l_t_beta matrix. T-Values for each Coefficient.
+#' @field l_data_set_name character. The Given Data.
+#'
+#' @return Nothing.
+#' @export linreg
+#' @exportClass linreg
+
+
 linreg <- setRefClass("linreg",
                       fields = list(
                         X = "matrix",
@@ -98,17 +122,3 @@ linreg <- setRefClass("linreg",
                         
                       )
 )
-
-ext_print <- function(...) {
-    print(...)
-}
-
-asterisks <- function(p_value) {
-  if (p_value > 0.1) return(" ")
-  if (p_value > 0.05) return(".")
-  if (p_value > 0.01) return("*")
-  if (p_value > 0.001) return("**")
-  return("***")
-}
-
-asterisks <- Vectorize(asterisks, vectorize.args = "p_value")
