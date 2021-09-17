@@ -1,20 +1,29 @@
 ---
 title: "Lab4Package"
 authors: Marketos Damigos (marda352) & Christoforos Spyretos (chrsp415)
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Lab4Package}
   %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
+  %\VignetteEncoding{UTF-8}
 ---
 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE
+)
+```
 
 
 ```{r, include = FALSE}
 
 library(ggplot2)
 
-library(linear.regression)
+library(Lab4package)
 
 ```
 

@@ -6,6 +6,9 @@
 \usage{
 asterisks(p_value)
 }
+\arguments{
+\item{p_value}{p value}
+}
 \value{
 Returns the p_value in asterisks
 }

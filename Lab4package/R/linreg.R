@@ -24,6 +24,7 @@
 #' @field pred function. Returns predictions.
 #' @field coef function. Returns coefficients.
 #' @field summary function. Returns summary of the above.
+#' @import methods
 #' @return Nothing.
 #' @export linreg
 #' @exportClass linreg
@@ -83,9 +84,9 @@ linreg <- setRefClass("linreg",
 
 
                         plot = function(){
-
+                          
                           library(ggplot2)
-
+                          
                           residuals_vs_fitted <- ggplot(data.frame(x = e_hat, y = y_hat), aes(y_hat, e_hat)) +
                             geom_point() +
                             xlab(paste("Fitted Values\n", "linreg(", format(formula), ")", ""))+
@@ -96,6 +97,7 @@ linreg <- setRefClass("linreg",
                           scale_location = ggplot(data.frame(x = sterr, y = y_hat), aes(x = y_hat, y = sterr))+
                             geom_point()+
                             xlab(paste("Fitted Values\n", "lm(", format(formula), ")", ""))+
+                            ylab(expression(sqrt("|Standardized residuals|")))+
                             stat_summary(fun= mean, colour="#54d8e0", geom="line",group=1)
 
                           ext_print(scale_location)
