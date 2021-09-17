@@ -7,7 +7,6 @@
 #' @export ext_print
 
 
-
 ext_print <- function(...) {
     print(...)
 }
