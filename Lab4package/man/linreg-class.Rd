@@ -14,33 +14,49 @@ This class offers linear regression calculation using the QR Decomposition metho
 \section{Fields}{
 
 \describe{
-\item{\code{X}}{matrix. Independent Values.}
+\item{\code{X}}{matrix. Independent values.}
 
-\item{\code{y}}{matrix. Depenent Values.}
+\item{\code{y}}{matrix. Dependent values.}
 
-\item{\code{b_hat}}{matrix. Regression Coeffcients.}
+\item{\code{b_hat}}{matrix. Regression coefficients.}
 
-\item{\code{y_hat}}{matrix. Fitted Values.}
+\item{\code{y_hat}}{matrix. Fitted values.}
 
-\item{\code{l_e}}{matrix. Residuals.}
+\item{\code{e_hat}}{matrix. Residuals values.}
 
-\item{\code{l_n}}{numeric. Number of Independant Values (Number of Observations).}
+\item{\code{df}}{numeric. Degrees of freedom.}
 
-\item{\code{l_p}}{numeric. Number of Dependant Values (Number of Parameters in the Model).}
+\item{\code{s2_hat}}{matrix. Variance of residuals.}
 
-\item{\code{l_df}}{numeric. Degrees of freedom.}
+\item{\code{var_b_hat}}{matrix. Variance of the regression coefficients.}
 
-\item{\code{l_sigma_s}}{matrix. Residual Variance.}
+\item{\code{f_text}}{formula. The formula for the linear regression.}
 
-\item{\code{l_var_beta}}{matrix. Variance of the Regression Coefficients.}
+\item{\code{p_value}}{numeric. P-Values.}
 
-\item{\code{l_formula}}{formula. The Formula for the Linear Regression.}
+\item{\code{t_b}}{matrix. T-Values for each coefficient.}
 
-\item{\code{l_p_values}}{numeric. P-Values.}
+\item{\code{name_ds}}{character. The given data.}
 
-\item{\code{l_t_beta}}{matrix. T-Values for each Coefficient.}
+\item{\code{Q}}{matrix. Q matrix from the QR decomposition.}
 
-\item{\code{l_data_set_name}}{character. The Given Data.}
+\item{\code{R}}{matrix. Upper triangular matrix.}
+
+\item{\code{Qy}}{matrix.}
+
+\item{\code{sterr}}{matrix. Standard error.}
+
+\item{\code{print()}}{function. Returns coefficients.}
+
+\item{\code{plot}}{function. Returns sets of plots..}
+
+\item{\code{resid}}{function. Returns residuals.}
+
+\item{\code{pred}}{function. Returns predictions.}
+
+\item{\code{coef}}{function. Returns coefficients.}
+
+\item{\code{summary}}{function.}
 }}
 
 

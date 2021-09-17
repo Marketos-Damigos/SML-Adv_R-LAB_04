@@ -2,21 +2,28 @@
 #'
 #' @description This class offers linear regression calculation using the QR Decomposition method and comes with some handy tools.
 #'
-#' @field X matrix. Independent Values.
-#' @field y matrix. Depenent Values.
-#' @field b_hat matrix. Regression Coeffcients.
-#' @field y_hat matrix. Fitted Values.
-#' @field l_e matrix. Residuals.
-#' @field l_n numeric. Number of Independant Values (Number of Observations).
-#' @field l_p numeric. Number of Dependant Values (Number of Parameters in the Model).
-#' @field l_df numeric. Degrees of freedom.
-#' @field l_sigma_s matrix. Residual Variance.
-#' @field l_var_beta matrix. Variance of the Regression Coefficients.
-#' @field l_formula formula. The Formula for the Linear Regression.
-#' @field l_p_values numeric. P-Values.
-#' @field l_t_beta matrix. T-Values for each Coefficient.
-#' @field l_data_set_name character. The Given Data.
-#'
+#' @field X matrix. Independent values.
+#' @field y matrix. Dependent values.
+#' @field b_hat matrix. Regression coefficients.
+#' @field y_hat matrix. Fitted values.
+#' @field e_hat matrix. Residuals values.
+#' @field df numeric. Degrees of freedom.
+#' @field s2_hat matrix. Variance of residuals.
+#' @field var_b_hat matrix. Variance of the regression coefficients.
+#' @field f_text formula. The formula for the linear regression.
+#' @field p_value numeric. P-Values.
+#' @field t_b matrix. T-Values for each coefficient.
+#' @field name_ds character. The given data.
+#' @field Q matrix. Q matrix from the QR decomposition.
+#' @field R matrix. Upper triangular matrix.
+#' @field Qy matrix. 
+#' @field sterr matrix. Standard error.
+#' @field print() function. Returns coefficients.
+#' @field plot function. Returns sets of plots.. 
+#' @field resid function. Returns residuals. 
+#' @field pred function. Returns predictions.
+#' @field coef function. Returns coefficients.
+#' @field summary function.
 #' @return Nothing.
 #' @export linreg
 #' @exportClass linreg
