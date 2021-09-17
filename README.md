@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/Marketos-Damigos/SML-Adv_R-LAB_04.svg?token=gRD797XfREbR65fpuoXy&branch=main)](https://app.travis-ci.com/Marketos-Damigos/SML-Adv_R-LAB_04)
+
 # 732A94 - Advanced R Programming  Lab 4 
 ## Overview
 Implementation of Linear Regression with QR Decomposition in R language using RC class by Marketos Damigos (marda352) and Christoforos Spyretos (chrsp415) for the Lab 4 of course 732A94 - Advanced R Programming.
