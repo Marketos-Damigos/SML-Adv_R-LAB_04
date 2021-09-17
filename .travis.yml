@@ -1,0 +1,4 @@
+language: r
+before_install:
+  - cd Lab4package
+cache: packages
