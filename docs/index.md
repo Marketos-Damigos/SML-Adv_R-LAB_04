@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# 732A94 - Advanced R Programming  Lab 4 
+## Overview
+Implementation of Linear Regression with QR Decomposition in R language using RC class by Marketos Damigos (marda352) and Christoforos Spyretos (chrsp415) for the Lab 4 of course 732A94 - Advanced R Programming.
 
-You can use the [editor on GitHub](https://github.com/Marketos-Damigos/SML-Adv_R-LAB_04/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Contribution
+Both students contributed equally for the development of the package.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+devtools::install_github("Marketos-Damigos/SML-Adv_R-LAB_04]", subdir="Lab4package")
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Vignettes
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Marketos-Damigos/SML-Adv_R-LAB_04/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
+browseVignettes("Lab4package")
+```
