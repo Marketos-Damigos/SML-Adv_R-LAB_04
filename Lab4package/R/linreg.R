@@ -23,7 +23,7 @@
 #' @field resid function. Returns residuals. 
 #' @field pred function. Returns predictions.
 #' @field coef function. Returns coefficients.
-#' @field summary function.
+#' @field summary function. Returns summary of the above.
 #' @return Nothing.
 #' @export linreg
 #' @exportClass linreg

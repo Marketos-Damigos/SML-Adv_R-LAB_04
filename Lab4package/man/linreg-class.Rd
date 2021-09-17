@@ -56,7 +56,7 @@ This class offers linear regression calculation using the QR Decomposition metho
 
 \item{\code{coef}}{function. Returns coefficients.}
 
-\item{\code{summary}}{function.}
+\item{\code{summary}}{function. Returns summary of the above.}
 }}
 
 
