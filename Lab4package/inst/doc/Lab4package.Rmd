@@ -1,0 +1,105 @@
+---
+title: "Lab4Package"
+authors: Marketos Damigos (marda352) & Christoforos Spyretos (chrsp415)
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Lab4Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE
+)
+```
+
+
+```{r, include = FALSE}
+
+library(ggplot2)
+
+library(Lab4package)
+
+```
+
+##  Introduction
+
+Implementation of Linear Regression with QR Decomposition in R-language using RC-class by Marketos Damigos (marda352) and Christoforos Spyretos (chrsp415).
+
+##  Usage Methods
+
+```{r echo=TRUE, fig.show='hold'}
+
+linear_regression = linreg(Petal.Length~Species, data=iris)
+
+```
+
+###  print()
+
+The print() function calls the formula along with the coefficients.
+
+```{r, fig.show='hold'}
+
+linear_regression$print()
+
+```
+
+###  plot()
+
+The plot() function returns the plots of Residuals vs Fitted Values and Scale Location.
+
+```{r}
+
+linear_regression$plot()
+
+```
+
+###  resid()
+
+The resid() function returns the residuals values.
+$$\hat{e} = y - \hat{y} = y - X\hat{\beta}$$
+
+```{r, fig.show='hold', fig.align='center'}
+
+head(linear_regression$resid())
+
+```
+
+###  pred()
+
+The pred() function retyrns the predicted values. 
+$$\hat{y}$$
+
+```{r, fig.show='hold'}
+
+head(linear_regression$pred())
+
+```
+
+###  coef()
+
+The coef() function returns the coefficients values, $$\hat{\beta} = (X^TX)^{-1}X^Ty$$
+
+```{r, fig.show='hold'}
+
+linear_regression$coef()
+
+```
+
+###  summary()
+
+The summary() function returns coefficients values with their standard error, t-value, p-value as well as the estimate of $\hat{\sigma}$ along with the degrees of freedom.
+
+```{r, fig.show='hold'}
+
+linear_regression$summary()
+
+```
+##  References
+[Matrix decompositions for regression analysis](https://www.stat.wisc.edu/courses/st849-bates/lectures/Orthogonal.pdf)
+[Wikipedia Linear Regression](https://en.wikipedia.org/wiki/Linear_regression)
