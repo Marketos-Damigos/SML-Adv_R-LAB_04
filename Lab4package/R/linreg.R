@@ -49,11 +49,17 @@ linreg <- setRefClass("linreg",
                         R = "matrix",
                         Qy = "matrix"),
                       
-                      # Methods ----------------------------
                       methods = list(
                         
-                        # Constructor ----------------------
                         initialize = function(formula, data) {
+                          
+                          if (class(formula) != "formula") {
+                            stop("Error: You should give a formula")
+                          }
+                          if (is.data.frame(data) == FALSE){
+                            stop("Error: You should give a dataframe")
+                          }
+                          
                           X <<- model.matrix(formula, data)
                           y <<- as.matrix(data[all.vars(formula)[1]])
                           QR <- qr(X)
